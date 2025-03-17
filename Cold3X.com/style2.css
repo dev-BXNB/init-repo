@@ -1,0 +1,550 @@
+/* General Reset and Base Styles (No changes, these are good) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+  height: 100dvh;
+  background: linear-gradient(#0c1421 80%, black);
+  overflow-y: auto;
+  /* Change to auto to enable scrolling on all devices */
+  overflow-x: hidden;
+  /* Ensure no horizontal scroll */
+}
+
+a {
+  color: whitesmoke;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #74a0ec;
+}
+
+/* Container (Updated for better responsiveness) */
+.container {
+  width: 95%;
+  /* Use percentage for responsiveness */
+  max-width: 1200px;
+  /* Limit max width on large screens */
+  margin: 0 auto;
+  /* Center the container */
+  height: auto;
+  /* Adjust height dynamically */
+  display: flex;
+  padding-bottom: 2rem;
+  /* add padding to the bottom to separate the content from the bottom of the page */
+}
+
+/* Sticky Sidebar (Improved Responsiveness) */
+.stickySideBar {
+  display: flex;
+  flex: 0 0 30%;
+  /* Set a flexible width */
+  flex-direction: column;
+  padding: 2rem 1rem 0 1rem;
+  /* Reduced padding */
+  position: sticky;
+  /* Ensure sticky behavior on larger screens */
+  top: 0;
+  /* Stick to the top */
+  height: fit-content;
+}
+
+.stickySideBar header>h1 {
+  color: #35568f;
+  font-size: 3rem;
+  /* Slightly smaller for better fit */
+  margin: 0.5rem 0;
+}
+
+.stickySideBar header>h3 {
+  color: #D3D3D3;
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  /* Adjust size */
+}
+
+/* Glow Effects (No changes needed, they look good) */
+.glowing-word {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  position: relative;
+  animation: baby-glow 2s ease-in-out infinite;
+}
+
+@keyframes baby-glow {
+
+  0%,
+  100% {
+    text-shadow: 0 0 10px rgba(255, 182, 193, 0.8),
+      0 0 20px rgba(255, 182, 193, 0.6);
+  }
+
+  25% {
+    text-shadow: 0 0 10px rgba(173, 216, 230, 0.8),
+      0 0 20px rgba(173, 216, 230, 0.6);
+  }
+
+  50% {
+    text-shadow: 0 0 10px rgba(240, 230, 140, 0.8),
+      0 0 20px rgba(240, 230, 140, 0.6);
+  }
+
+  75% {
+    text-shadow: 0 0 10px rgba(255, 228, 196, 0.8),
+      0 0 20px rgba(255, 228, 196, 0.6);
+  }
+}
+
+.glowing-word-pink {
+  text-shadow: 0 0 5px #FFB6C1, 0 0 10px #FFB6C1, 0 0 15px #FFB6C1,
+    0 0 20px #FFB6C1;
+}
+
+.glowing-word-blue {
+  color: #fff;
+  text-shadow: 0 0 5px #ADD8E6, 0 0 10px #ADD8E6, 0 0 15px #ADD8E6,
+    0 0 20px #ADD8E6;
+}
+
+.glowing-word-khaki {
+  color: #fff;
+  text-shadow: 0 0 5px #F0E68C, 0 0 10px #F0E68C, 0 0 15px #F0E68C,
+    0 0 20px #F0E68C;
+}
+
+.glowing-word-bisque {
+  color: #fff;
+  text-shadow: 0 0 5px #FFE4C4, 0 0 10px #FFE4C4, 0 0 15px #FFE4C4,
+    0 0 20px #FFE4C4;
+}
+
+/* Sidebar Text (Adjusted) */
+.stickySideBar header>p {
+  color: #D3D3D3;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* Navigation */
+nav {
+  width: 100%;
+  /* Take full width of sidebar */
+  margin: 2rem 0;
+}
+
+ul {
+  list-style: none;
+  color: #D3D3D3;
+}
+
+li {
+  margin: 1rem auto;
+  /* Reduced margin */
+  padding: 0 1rem;
+  border-left: 2px solid white;
+  transition: padding 1s ease;
+}
+
+li:hover {
+  padding: 0 2rem;
+  animation: changeColor 1s infinite;
+}
+
+@keyframes changeColor {
+
+  0%,
+  100% {
+    border-left-color: #d3d3d3;
+  }
+
+  50% {
+    border-left-color: #74a0ec;
+  }
+
+  75% {
+    border-left-color: #35568f;
+  }
+}
+
+hr {
+  display: inline-block;
+  width: 30px;
+  margin: 0 1rem 0.3rem 0;
+  color: #d3d3d3;
+}
+
+/* Contact Links */
+.contact {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* align items vertically */
+  margin: 1rem auto;
+  /* Reduced margin */
+}
+
+.contact img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 1rem;
+  /* Reduced margin */
+  outline: 0.5px solid #ffffff;
+  transition: transform 0.3s ease-in;
+}
+
+.contact img:hover {
+  transform: scale(1.3);
+}
+
+/* Footer */
+footer {
+  margin: 0 0 0 1rem;
+  /* Reduced margin */
+  text-align: center;
+  /* center on mobile */
+}
+
+footer span {
+  display: block;
+  margin: 0.5rem auto;
+  color: #d3d3d3;
+}
+
+footer span a {
+  color: #35568f;
+}
+
+/* Main Content */
+main {
+  width: 70%;
+  /* Take up remaining space */
+  padding: 2rem 1rem 0 2rem;
+  /* Reduced padding */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* Align to the left */
+  justify-content: flex-start;
+  color: #d3d3d3;
+  height: auto;
+  /* Let it grow with content */
+  overflow-y: auto;
+  /* Ensure scrolling in main */
+}
+
+/* About Section */
+#aboutSection {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 2rem 0;
+  /* Reduced margin */
+  width: 100%;
+}
+
+.headers {
+  color: #dbe8ff;
+  margin: 0.5rem 0;
+  /* Reduced margin */
+  font-size: 1.8rem;
+}
+
+.textContent {
+  color: #c3d9ff;
+  font-weight: 500;
+  line-height: 1.4rem;
+  margin: 0 0 1rem 0;
+  /* Reduced margin */
+}
+
+/* Card Layout (Improved Responsiveness) */
+.cardLayout {
+  display: flex;
+  flex-wrap: wrap;
+  /* Wrap on smaller screens */
+  gap: 1rem;
+}
+
+.cardLayout .container {
+  width: 100%;
+  max-width: calc(50% - 0.5rem);
+  /* Adjust width for 2 columns */
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  /* Remove extra margin */
+}
+
+.cardLayout .container:first-of-type {
+  width: 100%;
+}
+
+.cardLayout img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cardLayout .container .cardTitle {
+  margin: 1rem 0;
+  /* Reduced margin */
+  padding: 0;
+}
+
+.cardLayout .container .textContent {
+  width: 100%;
+}
+
+.lang {
+  display: inline;
+  font-weight: 600;
+}
+
+.lang * {
+  margin: 0 0.5rem 0 0;
+  /* Reduced margin */
+}
+
+#resume {
+  margin: 0.5rem;
+}
+
+#angle-small-up {
+  width: 20px;
+  height: 20px;
+  transform: rotate(30deg);
+}
+
+#angle-small-up:hover {
+  transform: scale(1.4);
+}
+
+/* Tech Section (Improved layout) */
+.techSection {
+  margin: 1rem auto;
+  /* Reduced margin */
+  width: 100%;
+}
+
+.techSection h2 {
+  margin: 0 1rem;
+}
+
+.techs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 1rem;
+  /* Reduced padding */
+  gap: 1rem;
+}
+
+.tech {
+  margin: 0;
+  /* Remove extra margin */
+  transition: transform 0.5s ease-in;
+}
+
+.tech:hover {
+  transform: scale(1.2);
+}
+
+/* Inbox Me */
+.inboxMe {
+  margin: 0.5rem;
+}
+
+/* Dialog (Adjusted) */
+.dialog {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: whitesmoke;
+  position: fixed;
+  /* use fixed instead of absolute */
+  top: 15%;
+  /* Adjust vertical position */
+  right: 2%;
+  /* Adjust horizontal position */
+  width: 40%;
+  /* Adjust width */
+  padding: 1rem;
+  background-color: #74a0ec;
+  border-radius: 10px;
+  animation: alert 5s infinite;
+  animation-delay: 3s;
+  z-index: 100;
+  /* Ensure it's above other content */
+}
+
+button {
+  width: 25%;
+  color: whitesmoke;
+  border: none;
+  cursor: pointer;
+  background: none;
+  outline: 2px solid white;
+}
+
+button:hover {
+  border: none;
+  outline: none;
+  background-color: #35568f;
+}
+
+@keyframes alert {
+
+  0%,
+  100% {
+    background-color: #74a0ec;
+  }
+
+  50% {
+    opacity: 0.5;
+    background-color: #0c1421;
+  }
+
+  75% {
+    opacity: 0.3;
+    background-color: #35568f;
+  }
+}
+
+/* --- Media Queries for Mobile/Tablet --- */
+@media (max-width: 768px) {
+
+  /* General adjustments */
+  body {
+    overflow-y: scroll;
+    /* Change to auto to enable scrolling on all devices */
+    overflow-x: hidden;
+    /* Ensure no horizontal scroll */
+  }
+
+  .container {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 1rem;
+    /* Add padding to the sides */
+  }
+
+  /* Mobile Sidebar */
+  .stickySideBar {
+    position: relative;
+    /* Remove sticky behavior */
+    width: 100%;
+    padding: 1rem;
+    /* Adjust padding for mobile */
+    text-align: center;
+    /* center the content */
+  }
+
+  .stickySideBar header {
+    text-align: center;
+    /* center the header */
+  }
+
+  .stickySideBar header h1 {
+    font-size: 2rem;
+  }
+
+  .stickySideBar header h3 {
+    font-size: 1.1rem;
+  }
+
+  .stickySideBar header p {
+    font-size: 0.8rem;
+  }
+
+  .stickySideBar .contact {
+    margin-top: 1rem;
+    /* adjust margin */
+    justify-content: center;
+    /* center the contact */
+  }
+
+  .stickySideBar .contactIcon {
+    height: 25px;
+  }
+
+  /* Hide navigation in sidebar */
+  nav {
+    display: none;
+  }
+
+  /* Main Content on Mobile */
+  main {
+    width: 100%;
+    /* Full width on mobile */
+    padding: 1rem;
+    /* Adjust padding */
+    align-items: center;
+    /* center items horizontally */
+  }
+
+  /* About section */
+  .headers {
+    text-align: center;
+  }
+
+  /* CardLayout */
+  .cardLayout {
+    flex-direction: column;
+    /* Stack vertically */
+  }
+
+  .cardLayout .container {
+    max-width: 100%;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+  }
+
+  /* Dialog */
+  .dialog {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .stickySideBar header h1 {
+    font-size: 1.8rem;
+  }
+
+  .stickySideBar header h3 {
+    font-size: 1rem;
+  }
+
+  .stickySideBar header p {
+    font-size: 0.7rem;
+  }
+
+  .stickySideBar .contact {
+    margin-top: 0.5rem;
+    /* adjust margin */
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+
+  .dialog {
+    padding: 15px;
+    top: 15%;
+    left: 2%;
+    width: 96%;
+  }
+}

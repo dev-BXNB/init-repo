@@ -1,0 +1,34 @@
+WhatsApp Icon:
+  <i class="fi fi-brands-whatsapp"></i>
+
+Telegram Icon:
+  <i class="fi fi-brands-telegram"></i>
+
+Email Icon:
+  <i class="fi fi-ss-envelope"></i>
+
+Font Import
+
+<!-- HTML -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+----------
+
+/* CSS */
+
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+h1
+h2
+p 
+nav
+contact
+footer
