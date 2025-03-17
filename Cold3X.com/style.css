@@ -12,19 +12,19 @@
 
 body {
   /* height: 100dvh; */
-  background: linear-gradient(#35568f 80%, black);
+  background: #0c1421;
   background-repeat: no-repeat;
   overflow-y: hidden;
 }
 
 a {
-  color: #0c1421;
+  color: #74a0ec;
   font-weight: 500;
   text-decoration: none;
 }
 
 a:hover {
-  color: #74a0ec;
+  color: #3379f2;
 }
 
 .container {
@@ -43,10 +43,10 @@ a:hover {
 }
 
 .stickySideBar header>h1 {
-  color: #0c1421;
+  color: #74a0ec;
   /* margin: 1rem 0; */
   font-size: 4rem;
-  font-family: 'Monoton', sans-serif;
+  font-family: "Rubik Moonrocks", sans-serif;
 }
 
 .stickySideBar header>h3 {
@@ -433,8 +433,8 @@ button:hover {
     /* background: #0c1421; */
   }
 
-  header > h1{
-  color: #35568f;
+  header>h1 {
+    color: #35568f;
   }
 
 
