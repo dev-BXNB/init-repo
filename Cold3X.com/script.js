@@ -1,11 +1,3 @@
-let dialog = document.getElementById("dialogBtn");
-
-let closeDialog = document.getElementById("closeDialog");
-
-closeDialog.onclick = function(){
-  dialog.style.display = "none";
-}
-
 let scrollMain = document.getElementById("scrollMe");
 
 scrollMain.addEventListener("scroll", ()=>{

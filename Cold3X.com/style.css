@@ -44,10 +44,32 @@ a:hover {
 
 .stickySideBar header>h1 {
   color: #74a0ec;
-  /* margin: 1rem 0; */
   font-size: 4rem;
   font-family: "Rubik Moonrocks", sans-serif;
+  animation: slideIn 3s forwards;
 }
+/* Animation for logo text */
+
+@keyframes slideIn{
+  0%{
+    opacity: 0.3;
+    margin-left: -500px;
+  }
+
+  50%{
+    opacity: 0.5;
+  }
+
+  75%{
+    opacity: 0.7;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+/* End of animation */
 
 .stickySideBar header>h3 {
   color: #D3D3D3;
@@ -266,22 +288,6 @@ main {
   margin: 1rem;
 }
 
-.dialog {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  color: whitesmoke;
-  transform: scale(1.5);
-  position: absolute;
-  top: 35%;
-  right: 25%;
-  padding: 1rem;
-  background-color: #74a0ec;
-  border-radius: 10px;
-  animation: alert 5s infinite;
-  animation-delay: 3s;
-}
-
 button {
   width: 25%;
   color: whitesmoke;
@@ -357,9 +363,6 @@ button:hover {
     margin: 1rem auto;
   }
 
-  .dialog {
-    display: none;
-  }
 
   main {
     width: 100%;
@@ -451,10 +454,6 @@ button:hover {
 
   nav {
     margin: 1rem 0;
-  }
-
-  .dialog {
-    display: none;
   }
 
   main {
