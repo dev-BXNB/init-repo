@@ -12,8 +12,9 @@
 
 body {
   /* height: 100dvh; */
-  background: #0c1421;
-  background-repeat: no-repeat;
+  background: linear-gradient(to right, #0c1421 20%, #35568f 80%, #0c1421 20%, #35568f 80%);
+  background-size: 400% 400%;
+  animation: bgFlow 20s ease-in-out infinite;
   overflow-y: hidden;
 }
 
@@ -48,23 +49,24 @@ a:hover {
   font-family: "Rubik Moonrocks", sans-serif;
   animation: slideIn 3s forwards;
 }
+
 /* Animation for logo text */
 
-@keyframes slideIn{
-  0%{
+@keyframes slideIn {
+  0% {
     opacity: 0.3;
     margin-left: -500px;
   }
 
-  50%{
+  50% {
     opacity: 0.5;
   }
 
-  75%{
+  75% {
     opacity: 0.7;
   }
 
-  100%{
+  100% {
     opacity: 1;
   }
 }
@@ -518,4 +520,18 @@ button:hover {
   color: #35568f;
   border: 1px solid #0c1421;
   border-radius: 10px;
+}
+
+@keyframes bgFlow {
+  0% {
+    background-position: 50% 0;
+  }
+
+  50% {
+    background-position: 100% 0;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
 }
