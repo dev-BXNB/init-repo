@@ -422,7 +422,7 @@ button:hover {
   }
 
   .slide{
-    animation: autoRotate both;
+    animation: autoRotate;
     animation-timeline: view(70% 5%);
   }
 
