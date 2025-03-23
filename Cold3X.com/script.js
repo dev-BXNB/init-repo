@@ -1,8 +1,6 @@
 let scrollMain = document.getElementById("scrollMe");
 
-scrollMain.addEventListener("scroll", ()=>{
-  dialog.style.display = "none";
-});
+
 
 let topBtn = document.getElementById("top");
 
@@ -17,3 +15,26 @@ window.addEventListener("scroll", ()=>{
     topBtn.style.display = "none";
   }
 });
+
+// Script for scroll animation
+
+// const slides = document.querySelectorAll('.slide');
+
+// window.addEventListener('scroll', checkBoxes);
+
+// checkBoxes();
+
+// function checkBoxes(){
+//   const triggerBtn = window.innerHeight/5*4;
+
+//   slides.forEach(slide => {
+//     const slideTop = slide.getBoundingClientRect().top;
+
+//     if(slideTop < triggerBtn){
+//       slide.classList.add('slide');
+//     }else{
+//       slide.classList.remove('slide');
+//     }
+//   })
+// }
+

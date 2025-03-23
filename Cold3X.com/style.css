@@ -335,6 +335,7 @@ button:hover {
 
   body {
     overflow-y: auto;
+    overflow-x: hidden;
     height: auto;
   }
 
@@ -418,6 +419,23 @@ button:hover {
 
   .inboxMe {
     margin: 0;
+  }
+
+  .slide{
+    animation: autoRotate both;
+    animation-timeline: view(70% 5%);
+  }
+
+  @keyframes autoRotate{
+    from{
+      opacity: 0;
+      transform: translateY(10px) scale(0.3);
+    }
+
+    to{
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
   }
 }
 
