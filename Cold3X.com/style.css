@@ -6,20 +6,22 @@
   font-optical-sizing: auto;
   font-style: normal;
   scroll-behavior: smooth;
-  /* cursor: none; */
   /* outline: 2px solid white; */
 }
 
 body {
   /* height: 100dvh; */
-  background: linear-gradient(to right, #0c1421 20%, #35568f 80%, #0c1421 20%, #35568f 80%);
-  background-size: 400% 400%;
+  /* background: linear-gradient(to right, #0c1421 20%, #35568f 80%, #0c1421 20%, #35568f 80%);
+  background-size: 400% 400%; */
   animation: bgFlow 8s ease-in-out forwards;
   overflow-y: hidden;
+  background-image: url('assets/img/webBg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 a {
-  cursor: pointer;
   color: #74a0ec;
   font-weight: 500;
   text-decoration: none;
@@ -338,6 +340,8 @@ button:hover {
     overflow-y: auto;
     overflow-x: hidden;
     height: auto;
+    background-image: url('assets/img/mobBg.jpg');
+    background-attachment: fixed;
   }
 
   .container {
