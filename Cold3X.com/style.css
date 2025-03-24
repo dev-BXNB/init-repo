@@ -19,6 +19,7 @@ body {
 }
 
 a {
+  cursor: pointer;
   color: #74a0ec;
   font-weight: 500;
   text-decoration: none;
