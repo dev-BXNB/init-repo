@@ -329,27 +329,6 @@ button:hover {
 
 /* MOBILE RESPONSIVENESS*/
 
-@media screen and (orientation: landscape) {
-
-  body {
-    /* background-image: url('assets/img/webBg.jpg'); */
-    background-position: center;
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat;
-    animation: none;
-  }
-
-  .stickySideBar {
-    height: 100dvh;
-    z-index: 1;
-    overflow-y: scroll;
-  }
-
-  main {
-    height: auto;
-  }
-}
-
 @media screen and (max-width:768px) {
   * {
     padding: 0;
@@ -447,18 +426,18 @@ button:hover {
     margin: 0;
   }
 
-  .slide {
+  .slide{
     animation: autoRotate;
     animation-timeline: view(90% 5%);
   }
 
-  @keyframes autoRotate {
-    from {
+  @keyframes autoRotate{
+    from{
       opacity: 0;
       transform: translateY(10px) scale(0.3);
     }
 
-    to {
+    to{
       opacity: 1;
       transform: translateY(0) scale(1);
     }
