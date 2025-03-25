@@ -332,7 +332,7 @@ button:hover {
 @media screen and (orientation: landscape) {
 
   body {
-    background-image: url('assets/img/webBg.jpg');
+    /* background-image: url('assets/img/webBg.jpg'); */
     background-position: center;
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
@@ -347,10 +347,6 @@ button:hover {
 
   main {
     height: auto;
-  }
-
-  .headers{
-    display: block;
   }
 }
 
