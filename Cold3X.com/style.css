@@ -329,6 +329,18 @@ button:hover {
 
 /* MOBILE RESPONSIVENESS*/
 
+@media screen and (orientation: landscape) {
+
+  .stickySideBar{
+    height: 100dvh;
+  }
+
+  main{
+    outline: 2px solid blue;
+    height: auto;
+  }
+}
+
 @media screen and (max-width:768px) {
   * {
     padding: 0;
@@ -428,7 +440,7 @@ button:hover {
 
   .slide{
     animation: autoRotate;
-    animation-timeline: view(70% 5%);
+    animation-timeline: view(90% 5%);
   }
 
   @keyframes autoRotate{
@@ -536,9 +548,10 @@ button:hover {
   width: 30px;
   height: 30px;
   margin: 0.5rem;
-  color: #35568f;
+  color: #ffffff;
   border: 1px solid #0c1421;
   border-radius: 10px;
+  font-weight: 800;
 }
 
 @keyframes bgFlow {
