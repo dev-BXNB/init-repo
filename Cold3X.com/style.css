@@ -409,18 +409,18 @@ button:hover {
     margin: 0;
   }
 
-  .slide{
+  .slide {
     animation: autoRotate;
     animation-timeline: view(90% 5%);
   }
 
-  @keyframes autoRotate{
-    from{
+  @keyframes autoRotate {
+    from {
       opacity: 0;
       transform: translateY(10px) scale(0.3);
     }
 
-    to{
+    to {
       opacity: 1;
       transform: translateY(0) scale(1);
     }
@@ -432,10 +432,32 @@ button:hover {
   media to solve that issue
 */
 
-@media (orientation: landscape) and (max-width: 768px) and (max-height: 500px) {
+@media (orientation: landscape) and (max-width: 800px) and (max-height: 500px) {
 
-  .stickySideBar{
-    overflow: scroll;
+  body {
+    animation: none;
+    background-image: url('assets/img/webBg.jpg');
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .stickySideBar {
+    /* overflow: auto; */
+    height: 150dvh;
+  }
+
+  main {
+    width: 60%;
+    padding: 4rem 1rem 0 4rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end;
+  justify-content: flex-start; */
+    color: #d3d3d3;
+    outline: 2px solid blue;
+    height: auto;
+    overflow: auto;
   }
 
 }
