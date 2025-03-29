@@ -437,25 +437,24 @@ button:hover {
   body {
     animation: none;
     background-image: url('assets/img/webBg.jpg');
-    background-position: 50% 50%;
-    background-size: contain;
+    /* background-position: 50% 50%; */
+    background-size: cover;
     background-repeat: no-repeat;
   }
 
   .stickySideBar {
-    /* overflow: auto; */
+    overflow: auto;
     height: 150dvh;
   }
 
   main {
-    width: 60%;
-    padding: 4rem 1rem 0 4rem;
+    width: 100%;
+    padding: 0 1rem;
     display: flex;
     flex-direction: column;
     /* align-items: flex-end;
   justify-content: flex-start; */
     color: #d3d3d3;
-    outline: 2px solid blue;
     height: auto;
     overflow: auto;
   }
