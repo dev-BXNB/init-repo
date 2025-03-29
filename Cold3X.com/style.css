@@ -167,12 +167,12 @@ main {
   padding: 4rem 1rem 0 4rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-start;
+  /* align-items: flex-end;
+  justify-content: flex-start; */
   color: #d3d3d3;
   /* outline: 2px solid blue; */
   height: 100vh;
-  overflow-y: auto;
+  overflow: auto;
 }
 
 #aboutSection {
@@ -306,24 +306,6 @@ button:hover {
   background-color: #35568f;
 }
 
-@keyframes alert {
-
-  0%,
-  100% {
-    background-color: #74a0ec;
-  }
-
-  50% {
-    opacity: 0.5;
-    background-color: #0c1421;
-  }
-
-  75% {
-    opacity: 0.3;
-    background-color: #35568f;
-  }
-}
-
 
 
 
@@ -375,6 +357,7 @@ button:hover {
     display: flex;
     align-items: flex-start;
     padding: 1rem;
+    height: 100dvh;
   }
 
   #aboutSection {
@@ -444,6 +427,20 @@ button:hover {
   }
 }
 
+/* I realized when on landscape mode on small mobile devices
+  .stickySideBar overflows into the main content so used this 
+  media to solve that issue
+*/
+
+@media (orientation: landscape) and (max-width: 768px) and (max-height: 500px) {
+
+  .stickySideBar{
+    overflow: scroll;
+  }
+
+}
+
+/* End of media query for landscape view on small mobile devices */
 
 @media screen and (min-width: 769px) and (max-width : 1200px) {
   * {
