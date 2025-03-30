@@ -37,9 +37,16 @@ I mapped out the structure for my website, focusing on easy navigation and disti
 
 ### Design & Development
 
-I designed my mockups to create a mobile-friendly design which emphasizes a simple layout, simple text, and subtle animations. I made a mistake by not using a mobile-first approach, but this is the last time it will happen.
+I designed my mockups to create a mobile-friendly design emphasising a simple layout, text, and subtle animations. I made a mistake by not using a mobile-first approach, but this is the last time it will happen.
 
 Most Internet traffic comes from mobile devices. I recognize this as a learning opportunity, and I'm committed to refining my approach. The website is based purely on HTML, CSS, and JS. JavaScript handles the interactivity, and CSS handles animations.
+
+### Lessons Learned
+- The importance of mobile-first design
+- Continuous improvements through mistakes
+- Balancing aesthetics and functionality
+- Research and inspiration matter
+- Personal branding and professional presentation
 
 ### Conclusion
 
