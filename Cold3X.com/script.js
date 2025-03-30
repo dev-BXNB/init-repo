@@ -1,10 +1,3 @@
-// Script for vercel insights
-window.si = window.si || function () { 
-  (window.siq = window.siq || []).push(arguments); 
-};
-// End of script
-
-
 // Script for back to top button
 
 let scrollMain = document.getElementById("scrollMe");
