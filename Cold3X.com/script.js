@@ -24,7 +24,7 @@ window.addEventListener("scroll", () => {
 let main = document.getElementById("scrollMe");
 
 window.addEventListener("wheel", (e) => {
-  main.scrollTop += e.deltaY;
+  main.scrollTop += 100;
 });
 
 // End of script 
