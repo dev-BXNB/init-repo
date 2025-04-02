@@ -28,3 +28,5 @@ window.addEventListener("wheel", (e) => {
 });
 
 // End of script 
+
+console.log(window.pageYOffset);
