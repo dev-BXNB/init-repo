@@ -19,14 +19,15 @@ window.addEventListener("scroll", () => {
 });
 // End of back to top button script
 
-// Script to scroll main on window scroll for pc 
+let main = document.getElementById('scrollMe');
 
-let main = document.getElementById("scrollMe");
 
 window.addEventListener("wheel", (e) => {
-  main.scrollBy(100);
+  main.scrollBy(0, (e.deltaY * 1.5));
 });
+
 
 // End of script 
 
-console.log(window.pageYOffset);
+
+
