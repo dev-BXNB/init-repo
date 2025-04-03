@@ -23,7 +23,7 @@ let main = document.getElementById('scrollMe');
 
 
 window.addEventListener("wheel", (e) => {
-  main.scrollBy(0, (e.deltaY * 1.5));
+  main.scrollBy(0, (e.deltaY * 2.5));
 });
 
 
