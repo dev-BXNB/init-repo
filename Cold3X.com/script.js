@@ -26,6 +26,13 @@ window.addEventListener("wheel", (e) => {
   main.scrollBy(0, (e.deltaY * 2.5));
 });
 
+window.addEventListener("mousemove", (e)=>{
+  let xPos = window.screenX;
+  let yPos = window.screenY;
+  
+})
+
+
 
 // End of script 
 
