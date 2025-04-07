@@ -9,7 +9,6 @@ let topBtn = document.getElementById("top");
 window.addEventListener("scroll", () => {
   let scrollDistance = window.scrollY;
   if (scrollDistance > 100) {
-    console.log(scrollDistance);
     topBtn.style.display = "block";
   }
 
@@ -47,7 +46,118 @@ window.addEventListener("mousemove", (e) => {
 
 
 
-// End of script 
 
+function image1() {
+  // image 1 Array
 
+  let image = document.getElementById("image");
 
+  let imageArr = ["assets/img/Project img/ecommerce website/1.jpg", "assets/img/Project img/ecommerce website/2.jpg", "assets/img/Project img/ecommerce website/3.jpg", "assets/img/Project img/ecommerce website/4.jpg"];
+
+  let i = 0;
+
+  let clock = setInterval(() => {
+    image.src = imageArr[i];
+    i++;
+    if (i == imageArr.length) {
+      clearInterval(clock);
+      image1()
+    }
+  }, 3000);
+
+}
+
+image1();
+
+function image2(){
+  // image2 Array
+
+  let image = document.getElementById("image2");
+  let imageArr = ["assets/img/Project img/logistics website/1.jpg", "assets/img/Project img/logistics website/2.jpg", "assets/img/Project img/logistics website/3.jpg", "assets/img/Project img/logistics website/4.jpg"];
+
+  let i = 0;
+
+  let clock = setInterval(() => {
+    image.src = imageArr[i];
+    i++;
+    if (i == imageArr.length) {
+      clearInterval(clock);
+      image2()
+    }
+  }, 3500);
+
+}
+
+image2();
+
+function image3(){
+
+  // image3 Array
+  let image = document.getElementById("image3");
+  let imageArr = ["assets/img/Project img/hotel website/1.jpg", "assets/img/Project img/hotel website/2.JPG", "assets/img/Project img/hotel website/3.JPG", "assets/img/Project img/hotel website/4.JPG", "assets/img/Project img/hotel website/5.JPG", "assets/img/Project img/hotel website/6.JPG"];
+
+  let i = 0;
+
+  let clock = setInterval(() => {
+    image.src = imageArr[i];
+    i++;
+    if (i == imageArr.length) {
+      clearInterval(clock);
+      image3()
+    }
+  }, 3250);
+
+};
+
+image3();
+
+function image4(){
+
+  // image3 Array
+  let image = document.getElementById("image4");
+  let imageArr = ["assets/img/Project img/gallery website/1.JPG", "assets/img/Project img/gallery website/2.JPG", "assets/img/Project img/gallery website/3.JPG", "assets/img/Project img/gallery website/4.JPG", "assets/img/Project img/gallery website/5.JPG"];
+
+  let i = 0;
+
+  let clock = setInterval(() => {
+    image.src = imageArr[i];
+    i++;
+    if (i == imageArr.length) {
+      clearInterval(clock);
+      image4()
+    }
+  }, 3200);
+
+};
+
+image4();
+
+// A.I Generated code
+
+// function sayArray() {
+//   let image = document.getElementById("image");
+//   if (!image) {
+//     console.error("Element with ID 'image' not found.");
+//     return; // Exit the function if the image element is not found
+//   }
+
+//   let newArr = [
+//     "assets/img/Project img/ecommerce website/1.JPG",
+//     "assets/img/Project img/ecommerce website/2.JPG",
+//     "assets/img/Project img/ecommerce website/3.JPG",
+//     "assets/img/Project img/ecommerce website/4.JPG",
+//   ];
+
+//   for (let i = 0; i < newArr.length; i++) {
+//     setTimeout(() => {
+//       image.src = newArr[i];
+//         // Check if it's the last image, then start over.
+//         if (i === newArr.length -1){
+//             //restart the loop
+//             sayArray()
+//         }
+//     }, 3000 * i);
+//   }
+// }
+
+// sayArray();
