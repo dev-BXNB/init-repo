@@ -52,7 +52,7 @@ function image1() {
 
   let image = document.getElementById("image");
 
-  let imageArr = ["assets/img/Project img/ecommerce website/1.jpg", "assets/img/Project img/ecommerce website/2.jpg", "assets/img/Project img/ecommerce website/3.jpg", "assets/img/Project img/ecommerce website/4.jpg"];
+  let imageArr = ["assets/img/Project img/ecommerce website/1.JPG", "assets/img/Project img/ecommerce website/2.JPG", "assets/img/Project img/ecommerce website/3.JPG", "assets/img/Project img/ecommerce website/4.JPG"];
 
   let i = 0;
 
