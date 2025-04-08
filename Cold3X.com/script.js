@@ -1,9 +1,5 @@
 // Script for back to top button
 
-let scrollMain = document.getElementById("scrollMe");
-
-
-
 let topBtn = document.getElementById("top");
 
 window.addEventListener("scroll", () => {
@@ -154,32 +150,3 @@ function image5() {
 
 image5();
 
-// A.I Generated code
-
-// function sayArray() {
-//   let image = document.getElementById("image");
-//   if (!image) {
-//     console.error("Element with ID 'image' not found.");
-//     return; // Exit the function if the image element is not found
-//   }
-
-//   let newArr = [
-//     "assets/img/Project img/ecommerce website/1.JPG",
-//     "assets/img/Project img/ecommerce website/2.JPG",
-//     "assets/img/Project img/ecommerce website/3.JPG",
-//     "assets/img/Project img/ecommerce website/4.JPG",
-//   ];
-
-//   for (let i = 0; i < newArr.length; i++) {
-//     setTimeout(() => {
-//       image.src = newArr[i];
-//         // Check if it's the last image, then start over.
-//         if (i === newArr.length -1){
-//             //restart the loop
-//             sayArray()
-//         }
-//     }, 3000 * i);
-//   }
-// }
-
-// sayArray();
