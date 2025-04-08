@@ -69,7 +69,7 @@ function image1() {
 
 image1();
 
-function image2(){
+function image2() {
   // image2 Array
 
   let image = document.getElementById("image2");
@@ -90,7 +90,7 @@ function image2(){
 
 image2();
 
-function image3(){
+function image3() {
 
   // image3 Array
   let image = document.getElementById("image3");
@@ -111,7 +111,7 @@ function image3(){
 
 image3();
 
-function image4(){
+function image4() {
 
   // image3 Array
   let image = document.getElementById("image4");
@@ -131,6 +131,28 @@ function image4(){
 };
 
 image4();
+
+
+function image5() {
+
+  // image3 Array
+  let image = document.getElementById("image5");
+  let imageArr = ["assets/img/Project img/church website/1.JPG", "assets/img/Project img/church website/2.JPG", "assets/img/Project img/church website/3.JPG", "assets/img/Project img/church website/4.JPG", "assets/img/Project img/church website/5.JPG"];
+
+  let i = 0;
+
+  let clock = setInterval(() => {
+    image.src = imageArr[i];
+    i++;
+    if (i == imageArr.length) {
+      clearInterval(clock);
+      image5()
+    }
+  }, 3200);
+
+};
+
+image5();
 
 // A.I Generated code
 
