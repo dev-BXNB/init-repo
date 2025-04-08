@@ -572,4 +572,19 @@ button:hover {
   100% {
     background-position: 0 50%;
   }
+
 }
+
+#mouseMove {
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background-color: #74a0ec;
+  opacity: 0.1;
+  filter: blur(30px);
+  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 80%);
+  mask-mode: alpha;
+  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 80%);
+  -webkit-mask-mode: alpha;
+}
+

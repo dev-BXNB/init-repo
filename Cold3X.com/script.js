@@ -1,5 +1,9 @@
 // Script for back to top button
 
+let scrollMain = document.getElementById("scrollMe");
+
+
+
 let topBtn = document.getElementById("top");
 
 window.addEventListener("scroll", () => {
@@ -21,11 +25,24 @@ window.addEventListener("wheel", (e) => {
   main.scrollBy(0, (e.deltaY * 2.5));
 });
 
-window.addEventListener("mousemove", (e)=>{
-  let xPos = window.screenX;
-  let yPos = window.screenY;
-  
-})
+let mouseMove = document.getElementById("mouseMove");
+
+window.addEventListener("mousemove", (e) => {
+  let xPos = e.clientX; // Correct: Use clientX
+  let yPos = e.clientY; // Correct: Use clientY
+
+  // Adjust the position to center the element on the cursor
+  // (Otherwise, the top-left corner will be at the cursor)
+  const elementWidth = mouseMove.offsetWidth;
+  const elementHeight = mouseMove.offsetHeight;
+  const cursorX = xPos - elementWidth / 2;
+  const cursorY = yPos - elementHeight / 2;
+
+  mouseMove.style.left = `${cursorX}px`; // Use template literals and add "px"
+  mouseMove.style.top = `${cursorY}px`; // Use template literals and add "px"
+  mouseMove.style.position = "fixed";
+  mouseMove.style.pointerEvents = "none";
+});
 
 
 
@@ -52,11 +69,11 @@ function image1() {
 
 image1();
 
-function image2() {
+function image2(){
   // image2 Array
 
   let image = document.getElementById("image2");
-  let imageArr = ["assets/img/Project img/logistics website/1.jpg", "assets/img/Project img/logistics website/2.jpg", "assets/img/Project img/logistics website/3.jpg", "assets/img/Project img/logistics website/4.jpg"];
+  let imageArr = ["assets/img/Project img/logistics website/1.jpg", "assets/img/Project img/logistics website/2.JPG", "assets/img/Project img/logistics website/3.JPG", "assets/img/Project img/logistics website/4.JPG"];
 
   let i = 0;
 
@@ -73,7 +90,7 @@ function image2() {
 
 image2();
 
-function image3() {
+function image3(){
 
   // image3 Array
   let image = document.getElementById("image3");
@@ -94,7 +111,7 @@ function image3() {
 
 image3();
 
-function image4() {
+function image4(){
 
   // image3 Array
   let image = document.getElementById("image4");
@@ -115,8 +132,7 @@ function image4() {
 
 image4();
 
-
-function image5() {
+function image5(){
 
   // image3 Array
   let image = document.getElementById("image5");
@@ -131,9 +147,29 @@ function image5() {
       clearInterval(clock);
       image5()
     }
-  }, 3200);
+  }, 3300);
 
 };
 
 image5();
 
+function image6(){
+
+  // image3 Array
+  let image = document.getElementById("image6");
+  let imageArr = ["assets/img/Project img/food website/1.JPG", "assets/img/Project img/food website/2.JPG", "assets/img/Project img/food website/3.JPG", "assets/img/Project img/food website/4.JPG", "assets/img/Project img/food website/5.JPG"];
+
+  let i = 0;
+
+  let clock = setInterval(() => {
+    image.src = imageArr[i];
+    i++;
+    if (i == imageArr.length) {
+      clearInterval(clock);
+      image6()
+    }
+  }, 3400);
+
+};
+
+image6();
